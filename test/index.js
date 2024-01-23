@@ -1,6 +1,10 @@
-let cards = [7, 3, 9]
+let sentence = ["Hello ", "my ", "name ", "is ", "Per"] 
+let greetingEl = document.getElementById("greeting-el")
+let sentenceText = ""
 
-for (let i = 0; i < cards.length; i += 1) {
-   console.log(cards[i]);
-    
+for (let i = 0; i < sentence.length; i++) {
+sentenceText += sentence[i];
+   
 }
+
+greetingEl.textContent = sentenceText;
