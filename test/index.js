@@ -1,7 +1,24 @@
-let sentence = ["Hello", "my", "name", "is", "Per"] 
-let greetingEl = document.getElementById("greeting-el")
+let player1Time = 102
+let player2Time = 107
 
-for (let i = 0; i < sentence.length; i++) {
-    greetingEl.textContent += sentence[i] + " "
-
+function getFastestRaceTime() {
+    if (player1Time < player2Time) {
+        return player1Time
+    } else if (player2Time < player1Time) {
+        return player2Time
+    } else {
+        return player1Time
+    }
 }
+
+let fastestRace = getFastestRaceTime()
+
+// Write a function that returns the total race time
+// Call/invoke the function and store the returned value in a new variable
+// Finally, log the variable out
+
+function getTotalRaceTime() {
+    return player1Time + player2Time
+}
+
+let totalTime = getTotalRaceTime
