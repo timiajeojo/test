@@ -1,24 +1,11 @@
-let player1Time = 102
-let player2Time = 107
-
-function getFastestRaceTime() {
-    if (player1Time < player2Time) {
-        return player1Time
-    } else if (player2Time < player1Time) {
-        return player2Time
-    } else {
-        return player1Time
-    }
+let airbnb = {
+    title: "learn CSS Grid for free",
+    lessons: 16,
+    creator: "per Harald Borgen",
+    length: 63,
+    level: 2,
+    isFree: true,
+    tags:["html, css"]
 }
 
-let fastestRace = getFastestRaceTime()
-
-// Write a function that returns the total race time
-// Call/invoke the function and store the returned value in a new variable
-// Finally, log the variable out
-
-function getTotalRaceTime() {
-    return player1Time + player2Time
-}
-
-let totalTime = getTotalRaceTime
+console.log(airbnb.tags);
